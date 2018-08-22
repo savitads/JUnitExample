@@ -2,9 +2,18 @@ package DemoJunit.DemoJunit;
 
 public class Calculator 
 {
-	public int add(int i, int j)
+	CalculatorService service;
+	
+   public Calculator(CalculatorService service) {
+		this.service = service;
+	}
+	
+	
+	
+	
+	public int perform(int i, int j) //2 3 => (i+j)*2
 	{
-		return i+j;
+		return service.add(i, j)*i;
 	}
 
 }
