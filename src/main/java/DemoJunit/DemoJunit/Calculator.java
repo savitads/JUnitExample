@@ -14,6 +14,7 @@ public class Calculator
 	public int perform(int i, int j) //2 3 => (i+j)*2
 	{
 		return service.add(i, j)*i;
+	    //return (i+j)*2;
 	}
 
 }
